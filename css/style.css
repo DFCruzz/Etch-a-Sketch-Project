@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    height: calc(100vh - 65px);
+}
+
+
+.header-container {
+    height: 60px;
+    background-color: #ffcab1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 280px;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container li {
+    display: flex;
+    gap: 40px;
+}
+
+.main-container {
+    display: flex;
+    height: 100%;    
+    width: 100%;
+    background-color: #befff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-box {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #ac442a;
+    height: 520px;
+    width: 925px;
+    border-radius: 10%;
+}
+
+.screen-box {
+    display: grid;
+    min-width: 500px;
+    min-height: 500px;
+    width: 500px;
+    height: 500px;    
+}
+
+.grid-box {
+    background-color: #ffffff;
+    outline: 1px solid #999999;
+}
+
+.button-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-box button {
+    width: 160px;
+    height:50px;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    background-color: #d5d5d5;
+    border: 2px solid #fcff5c;
+    border-radius: 1rem;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Rainbow button CSS effect - Start */
+.rainbow-btn {
+    width: 120px;
+    height: 40px;
+    color: #ffffff;
+    background: linear-gradient(-45deg, #ffadad 0%, #ffd6a5 13%, #fdffb6 27%, #caffbf 42%, #9bf6ff 57%, #a0c4ff 70%, #acbdff 85%, #ffc6ff 100%);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite, text-color 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes text-color {
+    0% {color: #ffffff;}
+    50% {color: #000000;}
+    100% {color: #ffffff;}
+}
+/* Rainbow button background CSS effect * - End */
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+    background-color: #ffcab1;
+    color: #9b1f00;
+}
+
+.footer-container h2 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+}
+
+.about-container {
+    text-align: right;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    padding-right: 40px;
+    width: 100%
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #ffcab1;
+    padding: 10px 30px;
+    width: 400px;
+    height: auto;
+    font-size: 18px;
+    text-align: center;
+    transform: translate(0%, -100%);
+    right: 0
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.blank-space {
+    width: 100%;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Virtual Etch-a-Sketch</title>
+</head>
+<body>
+    <div id="mainContainer" class="main-container">
+        <div id="outerBox" class="outer-box">
+            <div class="button-box">
+                <button>Eraser</button>
+                <button>Clear</button>
+                <div id="slideBox" class="slide-box">
+                    <div class="slide-title">
+                        Select the Grid Size
+                    </div>
+                    <input id="sizeSelector" type="range" value="16" min="16" max="80">
+                    <div id="gridSize" class="grid-size">
+                        16 x 16
+                    </div>
+                </div>
+            </div>
+            <div id="screenBox" class="screen-box"></div>
+            <div class="button-box">
+                <button>Pick a Color</button>
+                <button id="rainbowBtn" class="rainbow-btn">RAINBOW!</button>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" class="footer-container">
+        <div class="blank-space"></div>
+        <h2 class="logo">Ecth-a-Sketch</h2>
+        <div class="about-container">
+            <span class="dropdown">about
+                <div class="dropdown-content">
+                    <span>Site build by Diego Cruz for The Odin Project - Etch a Sketch.</span>
+                    <span>Built with HTML5, CSS3 and Javascript to practice DOM Manipulations and JS functions.</span>
+                    <span>Check out my other Projects at my <a href="https://github.com/DFCruzz">Github</a></span>
+                    <span>You can also reach me at my Discord DFCross#5752</span>
+                </div>
+            </span>
+        </div>
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+</html>
