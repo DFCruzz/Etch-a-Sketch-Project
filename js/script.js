@@ -3,21 +3,28 @@ const screenBox = document.getElementById("screenBox")
 const gridSize = document.getElementById("gridSize")
 const sizeSelector = document.getElementById("sizeSelector")
 
+let defaultColor = "#222222"
+
 
 // UI Script and Functions
-function clearGrid() {
+function sizeDisplay() {
+    const sizeValue = sizeSelector.value;
 
+    gridSize.innerHTML = (sizeValue + " x " + sizeValue)
 }
 
-function updateSizeValue() {
-    
+// Grid Script and Functions
+function newGridSize() {
+    const sizeValue = sizeSelector.value;
+
+    gridBox(sizeValue)
 }
 
+function gridBox(boxNumber) {
+    const sizeValue = sizeSelector.value;
 
+    boxNumber = sizeValue;
 
-// Grid Script
-
-function gridSize(boxNumber) {
     screenBox.style.gridTemplateColumns = `repeat(${boxNumber}, 1fr)`;
     screenBox.style.gridTemplateRows = `repeat(${boxNumber}, 1fr)`;
 
@@ -29,4 +36,4 @@ function gridSize(boxNumber) {
 
 }
 
-gridSize(16)
+gridBox(16)

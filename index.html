@@ -22,7 +22,7 @@
                     <div class="slide-title">
                         Select the Grid Size
                     </div>
-                    <input id="sizeSelector" type="range" value="16" min="16" max="80">
+                    <input id="sizeSelector" type="range" value="16" min="16" max="64" oninput="sizeDisplay()" onchange="newGridSize()">
                     <div id="gridSize" class="grid-size">
                         16 x 16
                     </div>
@@ -31,6 +31,7 @@
             <div id="screenBox" class="screen-box"></div>
             <div class="button-box">
                 <button>Pick a Color</button>
+                <input id="colorSelection" type="color" value="#222222">
                 <button id="rainbowBtn" class="rainbow-btn">RAINBOW!</button>
             </div>
         </div>

@@ -59,7 +59,7 @@ body {
 
 .grid-box {
     background-color: #ffffff;
-    outline: 1px solid #999999;
+    outline: 0.5px solid #bebebe;
 }
 
 .button-box {
@@ -81,6 +81,44 @@ body {
     font-family: 'Walter Turncoat', cursive;
     font-size: 18px;
     cursor: pointer;
+}
+
+.slide-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Walter Turncoat', cursive;
+    margin-top: 40px;
+}
+
+.slide-box input {
+    cursor: pointer;
+}
+
+.slide-title {
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    background-color: #d5d5d5;
+    border: 2px solid #fcff5c;
+    border-radius: 1rem;
+}
+
+.button-box input[type="color"]{
+    height: 32px;
+    width: 96px;
+    border-radius: 2rem;
+    outline: none;
+}
+
+.grid-size {
+    text-align: center;
+    width: 50%;
+    margin-top: 10px;
+    font-weight: 700;
+    background-color: #d5d5d5;
+    border: 2px solid #fcff5c;
+    border-radius: 1rem;
 }
 
 /* Rainbow button CSS effect - Start */
