@@ -67,7 +67,7 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .button-box button {
@@ -75,12 +75,18 @@ body {
     height:50px;
     padding: 10px 20px;
     margin: 20px 0px;
-    background-color: #d5d5d5;
     border: 2px solid #fcff5c;
     border-radius: 1rem;
     font-family: 'Walter Turncoat', cursive;
+    font-weight: 700;
     font-size: 18px;
     cursor: pointer;
+    transition: .3s ease;
+}
+
+.active-btn {
+    background-color: #222222;
+    color: #d5d5d5;
 }
 
 .slide-box {
@@ -89,7 +95,8 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Walter Turncoat', cursive;
-    margin-top: 40px;
+    font-weight: 700;
+    margin-top: 100px;
 }
 
 .slide-box input {
@@ -104,18 +111,27 @@ body {
     border-radius: 1rem;
 }
 
-.button-box input[type="color"]{
+.color-selection{
     height: 32px;
     width: 96px;
     border-radius: 2rem;
+    border: none;
     outline: none;
+}
+
+.color-selection::-webkit-color-swatch-wrapper {
+    padding: 2px; 
+}
+
+.color-selection::-webkit-color-swatch {
+    border: none;
+    border-radius: 2rem;
 }
 
 .grid-size {
     text-align: center;
     width: 50%;
     margin-top: 10px;
-    font-weight: 700;
     background-color: #d5d5d5;
     border: 2px solid #fcff5c;
     border-radius: 1rem;

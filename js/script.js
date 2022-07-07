@@ -2,8 +2,14 @@
 const screenBox = document.getElementById("screenBox")
 const gridSize = document.getElementById("gridSize")
 const sizeSelector = document.getElementById("sizeSelector")
+const colorBtn = document.querySelector("colorBtn")
 
-let defaultColor = "#222222"
+
+
+let colorBrush = true;
+let rainbowBrush = false;
+let eraserBrush = false;
+let defaultColor = "#222222";
 
 
 // UI Script and Functions
@@ -12,6 +18,9 @@ function sizeDisplay() {
 
     gridSize.innerHTML = (sizeValue + " x " + sizeValue)
 }
+
+
+
 
 // Grid Script and Functions
 function newGridSize() {
