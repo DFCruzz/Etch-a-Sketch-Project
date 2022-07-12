@@ -138,7 +138,7 @@ body {
 }
 
 /* Rainbow button CSS effect - Start */
-.rainbow-btn {
+.active-rainbow-btn {
     width: 120px;
     height: 40px;
     color: #ffffff;
