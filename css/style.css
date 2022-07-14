@@ -84,7 +84,7 @@ body {
     transition: .3s ease;
 }
 
-.active-btn {
+.active-btn, .clear-btn:hover {
     background-color: #222222;
     color: #d5d5d5;
 }
